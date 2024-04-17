@@ -23,7 +23,7 @@ export default function RootLayout({
         className={`${reddit_mono.className} flex flex-col h-screen bg-black text-white`}
       >
         <NavbarMenu />
-        <Hero />
+
         <main className="flex-grow">{children}</main>
         <Footer />
       </body>

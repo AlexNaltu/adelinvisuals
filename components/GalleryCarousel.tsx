@@ -13,7 +13,7 @@ import { carouselImages } from "@/lib/data";
 const GalleryCarousel = () => {
   return (
     <>
-      <Fade big={true}>
+      <Fade big={true} triggerOnce={true} duration={2000}>
         <Swiper
           autoplay={{
             delay: 4000,

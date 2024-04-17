@@ -14,7 +14,13 @@ import { Fade, Slide } from "react-awesome-reveal";
 const LatestWork = () => {
   return (
     <>
-      <Fade direction="up" triggerOnce={true} cascade={true} delay={200}>
+      <Fade
+        direction="up"
+        triggerOnce={true}
+        cascade={true}
+        delay={200}
+        duration={2000}
+      >
         <div className="max-w-6xl mx-auto p-4 my-2 sm:my-5 lg:my-8 xl:my-12">
           <h1 className="text-lg sm:text-2xl lg:text-3xl xl:text-4xl">
             My Latest Work

@@ -8,7 +8,7 @@ import { Fade } from "react-awesome-reveal";
 
 const Hero = () => {
   return (
-    <Fade triggerOnce={true} cascade={true} delay={200}>
+    <Fade triggerOnce={true} cascade={true} delay={200} duration={2000}>
       <div className="p-4 max-w-6xl mx-auto mt-8 sm:mt-12 lg:my-20">
         <section className="flex flex-col">
           <h1 className="text-lg sm:text-2xl lg:text-3xl xl:text-4xl mb-2">
