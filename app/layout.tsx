@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "bootstrap/dist/css/bootstrap.css";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
-import { Reddit_Mono } from "next/font/google";
 import NavbarMenu from "@/components/Navbar";
+import { Reddit_Mono } from "next/font/google";
 
-const inter = Reddit_Mono({ subsets: ["latin"], weight: "400" });
+const reddit_mono = Reddit_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} flex flex-col h-screen bg-black text-white`}
+        className={`${reddit_mono.className} flex flex-col h-screen bg-black text-white`}
       >
         <NavbarMenu />
         <Hero />

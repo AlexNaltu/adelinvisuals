@@ -78,3 +78,7 @@
 .icon {
   @apply hover:text-slate-400 transition duration-200 ease-in-out cursor-pointer;
 }
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+}
