@@ -5,6 +5,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { BsDiscord } from "react-icons/bs";
 import { RiInstagramFill } from "react-icons/ri";
 import { Fade } from "react-awesome-reveal";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -20,9 +21,11 @@ const Hero = () => {
             Pentru mai multe detalii nu ezita sa ma contactezi
           </h4>
           <div className="flex gap-4 items-center">
-            <Button className="rounded-full text-xs bg-white text-black hover:bg-slate-700 hover:text-white transition duration-200 ease-linear">
-              Contact Me
-            </Button>
+            <Link href={"/contact"}>
+              <Button className="rounded-full text-xs bg-white text-black hover:bg-slate-700 hover:text-white transition duration-200 ease-linear">
+                Contact Me
+              </Button>
+            </Link>
             <div className="flex gap-4">
               <FaFacebookF size={20} className="icon" />
               <BsDiscord size={20} className="icon" />

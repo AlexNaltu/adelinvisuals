@@ -105,3 +105,39 @@ export const footerData = [
     href: "https://www.instagram.com/",
   },
 ];
+
+export const galleryData = [
+  {
+    image: "/photo2.jpg",
+  },
+  {
+    image: "/photo2.jpg",
+  },
+  {
+    image: "/photo2.jpg",
+  },
+  {
+    image: "/photo2.jpg",
+  },
+  {
+    image: "/photo2.jpg",
+  },
+  {
+    image: "/photo2.jpg",
+  },
+  {
+    image: "/photo2.jpg",
+  },
+  {
+    image: "/photo2.jpg",
+  },
+  {
+    image: "/photo2.jpg",
+  },
+  {
+    image: "/photo2.jpg",
+  },
+  {
+    image: "/photo2.jpg",
+  },
+];

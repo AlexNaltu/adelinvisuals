@@ -40,9 +40,11 @@ function NavbarMenu() {
                 <Link href={"/contact"}>Contact</Link>
               </li>
             </ul>
-            <Button className="hidden sm:inline-flex rounded-full bg-white text-black hover:bg-slate-700 hover:text-white">
-              Contact
-            </Button>
+            <Link href={"/contact"}>
+              <Button className="hidden sm:inline-flex rounded-full bg-white text-black hover:bg-slate-700 hover:text-white">
+                Contact
+              </Button>
+            </Link>
           </nav>
         </div>
         <Drawer>
