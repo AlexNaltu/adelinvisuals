@@ -82,3 +82,11 @@
 .swiper-pagination-bullet {
   background-color: white !important;
 }
+
+.contact-label {
+  @apply font-bold;
+}
+
+.contact-input {
+  @apply bg-transparent  outline-none border-b-2 hover:border-black focus:border-black;
+}

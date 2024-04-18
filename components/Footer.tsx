@@ -11,7 +11,7 @@ const Footer = () => {
   if (pathName.includes("/contact")) {
     return null;
   }
-  
+
   return (
     <>
       <footer className=" text-xs lg:text-sm mt-10 p-2">
@@ -30,7 +30,7 @@ const Footer = () => {
               ))}
             </div>
             <div className="flex flex-col gap-2 ">
-              <p>adelinvisuals@gmail.com</p>
+              <p>tuduriadelin@yahoo.com</p>
               <p>Strada Milsugio Vlaicu</p>
               <p>+40 712 345 678</p>
             </div>

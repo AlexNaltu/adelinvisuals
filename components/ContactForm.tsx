@@ -6,6 +6,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import emailjs from "@emailjs/browser";
 import { Button } from "./ui/button";
+import { BsArrowRight } from "react-icons/bs";
+
 const userSchema = z.object({
   user_name: z.string().min(3).max(50),
   user_email: z.string().email(),
@@ -38,27 +40,49 @@ const ContactForm = () => {
     <form
       onSubmit={handleSubmit(onSubmit)}
       ref={ref}
-      className="flex flex-col placeholder:text-black text-black gap-4"
+      className="flex flex-col placeholder:text-black text-black  h-full gap-4 max-w-lg mx-auto py-5 uppercase placeholder:font-extralight px-10 md:py-40 xl:px-20"
     >
-      <input {...register("user_name")} placeholder="Name" />
+      <label className="contact-label">Nume/Prenume</label>
+      <input
+        {...register("user_name")}
+        placeholder="Nume/Prenume"
+        className="contact-input"
+      />
       {errors.name && (
-        <span className="text-red-500">
+        <span className="text-slate-500">
           {errors.name.message as React.ReactNode}
         </span>
       )}
-      <input {...register("user_email")} placeholder="Email" />
+      <label className="contact-label">Email</label>
+      <input
+        {...register("user_email")}
+        placeholder="Email"
+        className="contact-input"
+      />
       {errors.email && (
-        <span className="text-red-500">
+        <span className="text-slate-500">
           {errors.email.message as React.ReactNode}
         </span>
       )}
-      <textarea {...register("message")} placeholder="Message"></textarea>
+      <label className="contact-label">Mesaj</label>
+      <textarea
+        {...register("message")}
+        placeholder="Cu ce te pot ajuta?"
+        className="contact-input"
+        rows={5}
+      ></textarea>
       {errors.message && (
-        <span className="text-red-500">
+        <span className="text-slate-500">
           {errors.message.message as React.ReactNode}
         </span>
       )}
-      <Button type="submit">Submit</Button>
+      <Button type="submit" className="bg-black flex gap-2 items-center ">
+        Trimite <BsArrowRight size={15} />
+      </Button>
+      <div className="flex flex-col gap-1 text-sm">
+        <p>tuduriadelin@yahoo.com</p>
+        <p className="text-slate-500 lowercase">wJ5oH@example.com</p>
+      </div>
     </form>
   );
 };
