@@ -12,6 +12,7 @@ const Footer = () => {
     return null;
   }
 
+  //simple footer with a pathName
   return (
     <>
       <footer className=" text-xs lg:text-sm mt-10 p-2">

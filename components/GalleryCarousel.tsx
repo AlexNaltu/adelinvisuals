@@ -11,6 +11,7 @@ import { Fade } from "react-awesome-reveal";
 import { carouselImages } from "@/lib/data";
 
 const GalleryCarousel = () => {
+  // a carousel of images made with Swiper and react-awesome-reveal
   return (
     <>
       <Fade big={true} triggerOnce={true} duration={2000}>

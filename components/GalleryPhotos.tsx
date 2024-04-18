@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 
 const GalleryPhotos = () => {
   const boxStyle = " rounded-xl flex flex-col items-center justify-center";
-
+  //the gallery
   return (
     <Fade
       triggerOnce={true}

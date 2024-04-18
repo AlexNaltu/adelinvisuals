@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 
+//about me page
 const AboutMe = () => {
   return (
     <div className="flex flex-col p-4 gap-4 max-w-6xl mx-auto my-10 lg:mt-16 sm:flex-row sm:justify-center">

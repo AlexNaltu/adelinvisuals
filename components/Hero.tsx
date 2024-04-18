@@ -8,6 +8,7 @@ import { Fade } from "react-awesome-reveal";
 import Link from "next/link";
 
 const Hero = () => {
+  //hero section
   return (
     <Fade triggerOnce={true} cascade={true} delay={200} duration={2000}>
       <div className="p-4 max-w-6xl mx-auto mt-8 sm:mt-12 lg:my-20">

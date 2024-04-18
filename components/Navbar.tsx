@@ -19,6 +19,7 @@ function NavbarMenu() {
   if (pathName.includes("/contact")) {
     return null;
   }
+  //simple navbar with a pathName
 
   return (
     <Fade direction="down" triggerOnce={true} duration={2000}>

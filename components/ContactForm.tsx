@@ -7,7 +7,9 @@ import * as z from "zod";
 import emailjs from "@emailjs/browser";
 import { Button } from "./ui/button";
 import { BsArrowRight } from "react-icons/bs";
+import { useRouter } from "next/navigation";
 
+//zod schema
 const userSchema = z.object({
   user_name: z.string().min(3).max(50),
   user_email: z.string().email(),
@@ -15,7 +17,10 @@ const userSchema = z.object({
 });
 
 const ContactForm = () => {
+  //used ref for emailjs
   const ref: any = useRef();
+  //added router for redirect, i need to add success page later
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -24,6 +29,9 @@ const ContactForm = () => {
   } = useForm({
     resolver: zodResolver(userSchema),
   });
+  //useForm from react-use-form
+
+  //simple emailjs setup
   const onSubmit = (data: any) => {
     emailjs
       .sendForm(
@@ -35,6 +43,7 @@ const ContactForm = () => {
       .then((result) => console.log("Success"))
       .catch((error) => console.log("Failed"));
     reset();
+    router.push("/");
   };
   return (
     <form

@@ -13,6 +13,7 @@ import { Fade, Slide } from "react-awesome-reveal";
 import Link from "next/link";
 
 const LatestWork = () => {
+  // a carousel of images made with Swiper and react-awesome-reveal
   return (
     <>
       <Fade
