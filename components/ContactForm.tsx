@@ -80,8 +80,8 @@ const ContactForm = () => {
         Trimite <BsArrowRight size={15} />
       </Button>
       <div className="flex flex-col gap-1 text-sm">
-        <p>tuduriadelin@yahoo.com</p>
-        <p className="text-slate-500 lowercase">wJ5oH@example.com</p>
+        <p>Sau trimite-mi un email</p>
+        <p className="text-slate-500 lowercase">tuduriadelin@yahoo.com</p>
       </div>
     </form>
   );
