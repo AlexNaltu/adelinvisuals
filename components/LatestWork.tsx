@@ -10,6 +10,7 @@ import { latestWorkImages } from "@/lib/data";
 import Image from "next/image";
 import { Autoplay } from "swiper/modules";
 import { Fade, Slide } from "react-awesome-reveal";
+import Link from "next/link";
 
 const LatestWork = () => {
   return (
@@ -30,9 +31,11 @@ const LatestWork = () => {
               Aici gasiti cele mai recente
               <br /> fotografii
             </h3>
-            <Button className="w-fit text-xs sm:self-end rounded-full bg-slate-700 text-white hover:bg-white hover:text-black">
-              Vezi Galeria
-            </Button>
+            <Link href={"/gallery"}>
+              <Button className="w-fit text-xs sm:self-end rounded-full bg-slate-700 text-white hover:bg-white hover:text-black">
+                Vezi Galeria
+              </Button>
+            </Link>
           </div>
         </div>
       </Fade>
@@ -69,7 +72,7 @@ const LatestWork = () => {
                 alt="latest work"
                 width={3000}
                 height={3000}
-                className="aspect-video rounded-xl px-2"
+                className="aspect-video object-cover rounded-xl px-2"
               />
               <div className=" text-slate-300 flex items-center gap-2 justify-center absolute top-0 transform translate-x-[20%] sm:translate-x-[10%] lg:translate-x-[25%] xl:translate-x-[30%]  text-xs mt-4">
                 <div className=" flex items-center gap-1 bg-black/70 rounded-3xl p-1">

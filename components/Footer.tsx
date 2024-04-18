@@ -31,8 +31,8 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-2 ">
               <p>tuduriadelin@yahoo.com</p>
-              <p>Strada Milsugio Vlaicu</p>
-              <p>+40 712 345 678</p>
+              <p>Strada Matei Corvin Nr.6</p>
+              <p>+40 774 099 255</p>
             </div>
           </div>
           <h2>Copyright © 2024 Adelin Visuals. All rights reserved.</h2>

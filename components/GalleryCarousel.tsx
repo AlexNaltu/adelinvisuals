@@ -24,6 +24,7 @@ const GalleryCarousel = () => {
             clickable: true,
           }}
           modules={[Pagination, Autoplay]}
+          className="max-w-6xl"
         >
           {carouselImages.map((item) => (
             <SwiperSlide key={item.id}>
