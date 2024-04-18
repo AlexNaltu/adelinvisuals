@@ -12,9 +12,8 @@ const GalleryPhotos = () => {
       triggerOnce={true}
       cascade={true}
       damping={0.5}
-      duration={2000}
+      duration={3000}
       direction="up"
-      delay={200}
     >
       <div className="grid md:grid-cols-4 auto-rows-[300px] gap-4 my-10 md:my-16 xl:my-20  max-w-6xl mx-auto px-2 xl:px-0">
         {galleryData.map((item, i) => (
