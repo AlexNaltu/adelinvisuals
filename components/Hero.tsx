@@ -28,9 +28,15 @@ const Hero = () => {
               </Button>
             </Link>
             <div className="flex gap-4">
-              <FaFacebookF size={20} className="icon" />
-              <BsDiscord size={20} className="icon" />
-              <RiInstagramFill size={20} className="icon" />
+              <Link href={"https://www.facebook.com/luci.tuduri"}>
+                <FaFacebookF size={20} className="icon" />
+              </Link>
+              <Link href={"https://www.instagram.com/adelinvisuals/"}>
+                <BsDiscord size={20} className="icon" />
+              </Link>
+              <Link href={"https://www.instagram.com/adelinvisuals/"}>
+                <RiInstagramFill size={20} className="icon" />
+              </Link>
             </div>
           </div>
         </section>

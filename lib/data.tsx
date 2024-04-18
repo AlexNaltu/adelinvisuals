@@ -86,13 +86,13 @@ export const footerData = [
     id: 1,
     title: "Discord",
     icon: <FiArrowUpRight />,
-    href: "https://discord.com/",
+    href: "https://www.instagram.com/adelinvisuals/",
   },
   {
     id: 2,
     title: "Facebook",
     icon: <FiArrowUpRight />,
-    href: "https://www.facebook.com/",
+    href: "https://www.facebook.com/luci.tuduri",
   },
   {
     id: 3,
