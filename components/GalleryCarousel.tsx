@@ -33,6 +33,7 @@ const GalleryCarousel = () => {
                 alt="gallery"
                 width={3000}
                 height={3000}
+                priority
                 className="py-10 lg:my-10"
               />
             </SwiperSlide>
