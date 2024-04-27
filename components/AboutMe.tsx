@@ -17,7 +17,7 @@ const AboutMe = () => {
       </Fade>
       <Fade triggerOnce={true} direction="right" duration={2000}>
         <Image
-          src="/adelin.jpg"
+          src="/adelin1.jpeg"
           alt="adelin"
           width={300}
           height={300}
